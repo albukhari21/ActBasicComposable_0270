@@ -24,3 +24,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.myapplication.R
+
+@Preview(showBackground = true)
+@Composable
+fun TataLetakColumn(modifier: Modifier = Modifier) {
+    Column(
+        modifier = modifier.padding(top = 20.dp, start = 20.dp, end = 20.dp)
+    ) {
+    }
+}
