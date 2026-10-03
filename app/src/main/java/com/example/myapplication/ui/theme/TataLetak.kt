@@ -68,3 +68,19 @@ fun TataLetakBox(modifier: Modifier = Modifier) {
         Text(text = "Column 2")
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+fun TataLetakColumnRow(modifier: Modifier = Modifier) {
+    Column {
+        // Baris 1
+        Row(
+            modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            Text(text = "Komponen 1 Baris 1")
+            Text(text = "Komponen 2 Baris 1")
+            Text(text = "Komponen 3 Baris 1")
+        }
+    }
+}
