@@ -129,3 +129,37 @@ fun TataLetakRowColumn(modifier: Modifier = Modifier) {
         }
     }
 }
+
+@Preview(showBackground = true)
+@Composable
+fun TataLetakBoxColumnRow(modifier: Modifier = Modifier) {
+    val gambar = painterResource(id = R.drawable.logoumy)
+
+    Column {
+        Box(
+            modifier = modifier
+                .height(110.dp)
+                .background(color = Color.Yellow),
+            contentAlignment = Alignment.Center
+        ) {
+            Column {
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col 1 Row 1 Komponen 1")
+                    Text(text = "Col 1 Row 1 Komponen 2")
+                    Text(text = "Col 1 Row 1 Komponen 3")
+                }
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col 1 Row 2 Komponen 1")
+                    Text(text = "Col 1 Row 2 Komponen 2")
+                    Text(text = "Col 1 Row 2 Komponen 3")
+                }
+            }
+        }
+    }
+}
